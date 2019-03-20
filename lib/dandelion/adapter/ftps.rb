@@ -6,7 +6,6 @@ module Dandelion
       include ::Dandelion::Utils
 
       adapter 'ftps'
-      requires_gems 'double-bag-ftps'
 
       def initialize(config)
         config[:insecure] = to_b(config[:insecure])
